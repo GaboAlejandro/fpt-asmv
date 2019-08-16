@@ -1,6 +1,5 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { LoginComponent } from './components/login/login.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
 import { DancingComponent } from './components/dancing/dancing.component';
@@ -15,8 +14,8 @@ const appRoutes: Routes = [
   { path: 'appointment', component: AppointmentComponent},
   { path: 'dancing', component: DancingComponent},
   { path: 'dancers', component: DancersComponent},
-  { path: '', component: LoginComponent},
-  { path: '**', component: LoginComponent},
+  { path: '',  redirectTo: '/login'},
+  { path: '**', redirectTo: '/login'},
 
 ];
 
