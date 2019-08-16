@@ -4,10 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
+    "heroku-postbuild": "npm install --prefix ./client"
   },
   "private": true,
   "dependencies": {
@@ -56,6 +55,12 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3"
   },
   "engines": {
     "node": "11.14.0",
