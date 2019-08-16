@@ -6,7 +6,7 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class DancersService {
-  PHP_API_SERVER = 'http://localhost:8000';
+  PHP_API_SERVER = 'https://safe-chamber-22294.herokuapp.com';
 
   constructor(private httpClient: HttpClient) { }
 

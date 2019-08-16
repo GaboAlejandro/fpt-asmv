@@ -10,7 +10,7 @@ import { AppointmentModel } from '../../interfaces/appointment.model';
   providedIn: 'root'
 })
 export class HttpService {
-  PHP_API_SERVER = 'http://localhost:8000';
+  PHP_API_SERVER = 'https://safe-chamber-22294.herokuapp.com';
 
   constructor(private httpClient: HttpClient) {
   }
