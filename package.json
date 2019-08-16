@@ -8,6 +8,7 @@
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
     "heroku-postbuild": "npm install --prefix ./client"
   },
+  "postinstall": "ng build --aot -prod",
   "private": true,
   "dependencies": {
     "@angular/animations": "^8.2.2",
@@ -27,7 +28,6 @@
     "bootstrap": "^4.3.1",
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
-    "heroku-postbuild": "ng build --prod",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
     "path": "^0.12.7",
