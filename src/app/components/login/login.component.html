@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Register/Login</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+
+</head>
+
+<body>
+<p class="msj">{{ msj }}</p>
+<div class="register" style="display:none;">
+  <h1>Register to die</h1>
+  <input class="name" #name type="text" placeholder="Enter name">
+  <br>
+  <input class="email" #email_r type="email" placeholder="Enter email">
+  <br>
+  <input class="password" #password_r type="password" placeholder="Enter password">
+  <br>
+  <input class="password" #c_password type="password" placeholder="Confirm password">
+  <br>
+  <span class="out"></span>
+  <button class="reg"  (click)="Register(email_r.value, password_r.value, c_password.value, name.value, $event)" id="register-button" >Register</button>
+</div>
+<div class="login">
+  <h1>Login to die</h1>
+  <input class="Lemail" #email type="email" placeholder="Enter email">
+  <br>
+  <input class="Lpassword" #password type="password" placeholder="Enter password">
+  <br>
+  <span class="Lout"></span>
+  <br><br>
+  <button class="log"  (click)="logIn(email.value, password.value, $event)" id="login-button">Login</button>
+</div>
+<button class="change">Register/Login</button>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

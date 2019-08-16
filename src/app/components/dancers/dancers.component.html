@@ -1,0 +1,27 @@
+<body>
+
+<div class="scoreboard">
+  <h2>Dancers</h2>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Contact</th>
+      <th>Appointment</th>
+    </tr>
+    <tr *ngFor="let d of data" >
+      <td>{{d.user_id.name}}</td>
+      <td>{{d.user_id.email}}</td>
+      <td>{{d.appointment |date:'medium'}}</td>
+
+
+    </tr>
+
+  </table>
+</div>
+<ul>
+  <li><a  class="btn btn--base btn--secondary" (click)="logOut()"> Go Out!</a></li>
+</ul>
+
+</body>
+

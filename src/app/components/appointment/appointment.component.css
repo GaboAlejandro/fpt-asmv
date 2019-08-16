@@ -1,0 +1,145 @@
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;
+  background-color: rgb(25,25,25);
+}
+.line-1{
+  position: relative;
+  top: 2%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+.hours{
+
+  width: 12%;
+  height: 30px;
+  border: 1px solid red;
+  margin-left: 42%;
+  font-size: 16px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background: #000;
+  line-height: 20px;
+}
+.msj{
+  position: relative;
+  top: 10% !important;
+  font-size: 150%;
+  color: red;
+  margin: 1rem;
+  padding: 1rem;
+  border-top: 1px solid red;
+  margin: 0 auto;
+  text-align: center;
+}
+.btn {
+  position: relative;
+  width: 12%;
+  height: 8%;
+  background-color: red;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 80px;
+
+}
+
+.btn button {
+  margin-top: 1px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+  border: 5px solid white;
+  color: white;
+  transition: 0.5s ease-in-out;
+  outline: inherit;
+  box-shadow:4px 8px 12px black;
+}
+
+.btn button:hover{
+  background-color: white;
+  color: black;
+}
+
+btn span {
+  color: #f39c12;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.change{
+  margin-top:30px;
+}
+.container {
+  width: 400px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin-left: -200px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.player-button, .player-level, .player-got-it {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  color: red;
+  background: black;
+  border: 5px solid red;
+  display: inline-block;
+  font-family: sans-serif;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.player-button:hover, .player-level:hover, .player-got-it:hover {
+  -webkit-transform: scale(1.05);
+  color: white;
+  background: red;
+  border: 5px solid white;
+}
+
+.player-button:active, .player-level:active, .player-got-it:active {
+  -webkit-transform: scale(0.95);
+}
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 19em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

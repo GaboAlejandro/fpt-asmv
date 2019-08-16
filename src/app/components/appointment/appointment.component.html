@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<body>
+<p class="line-1 anim-typewriter">So, do you want to dance with her?</p>
+
+<p class="msj">{{ msj }}</p>
+<angular2-date-picker id="datetimepicker" [style.visibility]="day" [(ngModel)]="date" [settings]="settings" (onDateSelect)="hourShow()" ng-readonly = "true" ></angular2-date-picker>
+
+<select id="hours" class="hours" #hour [style.visibility]="hourv" (change)="buttonsShow(hour.value)">
+  <option>Select Hour</option>
+  <option class="select-d" *ngFor="let option of options" >
+    {{option + ':00' }}
+  </option>
+</select>
+
+<div class="container">
+  <div class="player-button" [style.visibility]="yes" (click)="createAppointment(date, ' '+hour.value.toString())" >Yes!</div>
+  <div class="player-button" [style.visibility]="no" (click)="logOut()">NO!</div>
+</div>
+
+</body>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.2/sweetalert.all.js"> </script>
+</html>
