@@ -8,8 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
+import { AngularDateTimePickerModule } from 'src/assets/angular2-datetimepicker';
 import { DancingComponent } from './components/dancing/dancing.component';
 import { DancersComponent } from './components/dancers/dancers.component';
 
