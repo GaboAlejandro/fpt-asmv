@@ -25,7 +25,7 @@
     "@angular/router": "^8.2.2",
     "@types/snapsvg": "^0.5.0",
     "bootstrap": "^4.3.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
